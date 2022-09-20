@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-brand {
+  @apply bg-gradient-to-tr from-[#FA803C] to-[#C61A17] text-white font-bold py-2 px-4 rounded-xl border-0 shadow;
+}
+
+.btn-brand2 {
+  @apply border-2 border-white px-6 bg-transparent rounded-none  hover:bg-[#E2512B] text-white hover:border-white;
+}
