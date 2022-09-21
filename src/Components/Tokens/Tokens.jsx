@@ -12,10 +12,10 @@ export default function Tokens() {
 
       <div className='  grid sm:grid-cols-2 gap-4'>
         <div className='flex flex-col items-center align-middle  gap-4'>
-          <div className='  mx-auto    text-5xl font-bold italic bg-gradient-to-r from-[#90C1D0] to-[#77B5C4] bg-clip-text text-transparent'>
+          <div className='  mx-auto    text-5xl font-bold italic bg-gradient-to-r from-[#90C1D0] to-[#16dcff] bg-clip-text text-transparent'>
             GMT
           </div>
-          <button className=' font-semibold chiplet text-white text-2xl -skew-x-12 hover:skew-x-0 transition-all duration-200 hover:shadow-md bg-gradient-to-r from-[#90C1D0] to-[#77B5C4]  '>
+          <button className=' font-semibold chiplet text-white text-2xl -skew-x-12 hover:skew-x-0 transition-all duration-200 hover:shadow-md bg-gradient-to-r from-[#90C1D0] to-[#16dcff]  '>
             Social Token
           </button>
           <div className='relative hover:scale-105 transform duration-300 cursor-pointer'>
@@ -29,7 +29,7 @@ export default function Tokens() {
 
             <div className='bg-[#16dcff] h-1 w-1 transform rotate-45 absolute bottom-14 right-36 animate-ping_fast'></div>
           </div>
-          <div className=' bg-transparent border border-orange-500  p-0 rounded-md -skew-x-6 hover:skew-x-0 transition-all duration-300 shadow'>
+          <div className=' bg-transparent border border-[#16dcff]  p-0 rounded-md -skew-x-6 hover:skew-x-0 transition-all duration-300 shadow'>
             <ul className='bg-white p-6 backdrop-blur-sm bg-opacity-5 text-white rounded-md'>
               <li className='text-lg font-semibold'>
                 Stake to earn Kick pass.
