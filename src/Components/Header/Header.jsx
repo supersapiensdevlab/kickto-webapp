@@ -37,16 +37,22 @@ export default function Header() {
         <img className='lg:ml-12' src={Logo} height='48' width='128'></img>{" "}
         <a className='btn btn-ghost normal-case text-xl'> </a>
       </div>
-      <div className='navbar-center hidden lg:flex'>
-        <ul className='menu menu-horizontal p-0'>
-          <li>
-            <a>Litepaper</a>
+      <div className='navbar-center hidden lg:flex '>
+        <ul className='flex flex-row p-0 font-semibold  gap-x-3 tracking-wide text-lg'>
+          <li className='flex-col rounded-none  '>
+            <div className='hover:border-b-4 pb-2 cursor-pointer hover:border-b-kickto-primary hover:bg-transparent rounded-none hover:text-white border-4 border-transparent'>
+              Litepaper
+            </div>
           </li>
-          <li>
-            <a>DEX</a>
+          <li className='flex-col rounded-none  '>
+            <div className='hover:border-b-4 pb-2 cursor-pointer hover:border-b-kickto-primary hover:bg-transparent rounded-none hover:text-white border-4 border-transparent'>
+              DEX
+            </div>
           </li>{" "}
-          <li>
-            <a>Marketplace</a>
+          <li className='flex-col rounded-none  '>
+            <div className='hover:border-b-4 pb-2 cursor-pointer hover:border-b-kickto-primary hover:bg-transparent rounded-none hover:text-white border-4 border-transparent'>
+              Marketplace
+            </div>
           </li>
         </ul>
       </div>
