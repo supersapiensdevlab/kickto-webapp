@@ -5,7 +5,7 @@ import Hero from "./Components/Hero/Hero";
 import Tokens from "./Components/Tokens/Tokens";
 function App() {
   return (
-    <div className='bg-[#151515]'>
+    <div className='bg-[#151515] '>
       <Header />
       <Hero />
       <Tokens />
