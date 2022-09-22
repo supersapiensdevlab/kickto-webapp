@@ -15,7 +15,11 @@ function Shoes() {
   return (
     <div className=' min-h-screen flex flex-col gap-4  bg-shard-back bg-cover    gap-y-6 h-screen'>
       <Canvas className='canvas   '>
-        <OrbitControls enableZoom={false} enablePan={false} />
+        <OrbitControls
+          enableZoom={false}
+          enablePan={false}
+          enableRotate={false}
+        />
         <ambientLight intensity={0.5} />
 
         <directionalLight position={[0, 10, 10]} intensity={1} />
