@@ -48,3 +48,17 @@
 .chiplet {
   @apply border-0 shadow px-6 py-3;
 }
+
+.annotation {
+  cursor: pointer;
+  outline: none;
+  font-size: 8px;
+  color: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}

@@ -11,7 +11,7 @@ function Tokens() {
     AOS.refresh();
   }, []);
   return (
-    <div className=' min-h-screen flex flex-col gap-4 bg-kickto-dark bg-cover bg-shard-back py-12 gap-y-6'>
+    <div className=' min-h-screen flex flex-col gap-4 bg-kickto-dark bg-cover   py-12 gap-y-6'>
       <div className='  text-center'>
         <h2
           data-aos='fade-up'

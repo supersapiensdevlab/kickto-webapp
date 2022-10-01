@@ -5,7 +5,11 @@ export default function Hero() {
       <div className='  flex    '>
         <div>
           <div data-aos-duration='1000' data-aos='fade-up' className='relative'>
-            <img src={walk2earn} height='256' width='512'></img>
+            <img
+              className='drop-shadow-2xl '
+              src={walk2earn}
+              height='256'
+              width='512'></img>
             {/* <h1 className='text-8xl font-bold text-white  z-10'>WALK</h1>
             <h1 className='text-9xl font-bold absolute top-0 ml-28 sm:ml-52 mt-12 scale-150 text-kickto-primary drop-shadow stroke-white stroke-2'>
               2
