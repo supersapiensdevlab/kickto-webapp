@@ -24,17 +24,17 @@ export default function Header() {
             tabIndex={0}
             className='menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 bg-kickto-dark '>
             <li>
-              <a className='active:bg-kickto-primary focus:bg-kickto-primary'>
+              <a className='active:bg-kickto-primary active:text-white focus:bg-kickto-primary hover:text-kickto-primary hover:font-semibold hover:bg-white'>
                 Litepaper
               </a>
             </li>
             <li>
-              <a className='active:bg-kickto-primary focus:bg-kickto-primary'>
+              <a className='active:bg-kickto-primary active:text-white focus:bg-kickto-primary hover:text-kickto-primary hover:font-semibold hover:bg-white'>
                 DEX
               </a>
             </li>{" "}
             <li>
-              <a className='active:bg-kickto-primary focus:bg-kickto-primary'>
+              <a className='active:bg-kickto-primary active:text-white focus:bg-kickto-primary hover:text-kickto-primary hover:font-semibold hover:bg-white'>
                 Marketplace
               </a>
             </li>
@@ -46,24 +46,24 @@ export default function Header() {
       <div className='navbar-center hidden lg:flex '>
         <ul className='flex flex-row p-0 font-semibold  gap-x-3 tracking-wide text-lg'>
           <li className='flex-col rounded-none  '>
-            <div className='hover:border-b-4 pb-2 cursor-pointer hover:border-b-kickto-primary hover:bg-transparent rounded-none hover:text-white border-4 border-transparent'>
+            <div className='active:text-kickto-primary hover:border-b-4 pb-2 cursor-pointer hover:border-b-kickto-primary hover:bg-transparent rounded-none hover:text-white border-4 border-transparent'>
               Litepaper
             </div>
           </li>
           <li className='flex-col rounded-none  '>
-            <div className='hover:border-b-4 pb-2 cursor-pointer hover:border-b-kickto-primary hover:bg-transparent rounded-none hover:text-white border-4 border-transparent'>
+            <div className='active:text-kickto-primary hover:border-b-4 pb-2 cursor-pointer hover:border-b-kickto-primary hover:bg-transparent rounded-none hover:text-white border-4 border-transparent'>
               DEX
             </div>
           </li>{" "}
           <li className='flex-col rounded-none  '>
-            <div className='hover:border-b-4 pb-2 cursor-pointer hover:border-b-kickto-primary hover:bg-transparent rounded-none hover:text-white border-4 border-transparent'>
+            <div className='active:text-kickto-primary hover:border-b-4 pb-2 cursor-pointer hover:border-b-kickto-primary hover:bg-transparent rounded-none hover:text-white border-4 border-transparent'>
               Marketplace
             </div>
           </li>
         </ul>
       </div>
       <div className='navbar-end'>
-        <a className='btn-brand btn'>Get the App</a>
+        <a className='btn-brand btn '>Get the App</a>
       </div>
     </div>
   );

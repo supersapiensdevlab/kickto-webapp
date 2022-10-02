@@ -62,3 +62,14 @@
   align-items: center;
   gap: 5px;
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #e2512b;
+  background: white;
+}
+
+::selection {
+  color: #e2512b;
+  background: white;
+}

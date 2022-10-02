@@ -33,7 +33,7 @@ function Shoes() {
         <h2
           data-aos='fade-right'
           data-aos-delay='800'
-          className='drop-shadow -mt-44  md:ml-36 text-9xl italic  font-extrabold bg-yellow-200  bg-gradient-to-r from-[#FF8B3E] to-[#C41716] bg-clip-text text-transparent'>
+          className='drop-shadow sm:-mt-44 ml-24 md:ml-36 sm:text-9xl text-6xl italic  font-extrabold bg-yellow-200  bg-gradient-to-r from-[#FF8B3E] to-[#C41716] bg-clip-text text-transparent'>
           FITNESS
         </h2>
         <Canvas
@@ -73,7 +73,7 @@ function Shoes() {
         <h2
           data-aos='fade-left'
           data-aos-delay='800'
-          className='  uppercase -mt-44 drop-shadow md:mr-36 text-9xl italic  font-extrabold bg-yellow-200  bg-gradient-to-r from-[#FF8B3E] to-[#C41716] bg-clip-text text-transparent'>
+          className='  uppercase  drop-shadow md:mr-36  -mt-44 ml-24 md:ml-36 sm:text-9xl text-6xl italic  font-extrabold bg-yellow-200  bg-gradient-to-r from-[#FF8B3E] to-[#C41716] bg-clip-text text-transparent'>
           SocialFi
         </h2>
       </div>

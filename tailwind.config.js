@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "kickto-darker": "#111111",
         "kickto-dark": "#151515",
         "kickto-primary": "#E2512B",
         "kickto-secondary": "#FA803C",
@@ -39,6 +40,8 @@ module.exports = {
       },
       animation: {
         wiggle: "bouncey 4s ease-in-out infinite",
+        wiggle_fast: "wiggle 1s ease-in-out infinite",
+
         wiggle_reverse: "wiggle 4s ease-in-out infinite reverse",
         ping_slow: "fade 3s ease-in-out infinite reverse",
         ping_medium: "fade 2s ease-in-out infinite ",

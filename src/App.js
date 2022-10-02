@@ -5,6 +5,7 @@ import Hero from "./Components/Hero/Hero";
 import Tokens from "./Components/Tokens/Tokens";
 import Shoes from "./Components/Shoes/Shoes";
 import Roadmap from "./Components/Roadmap/Roadmap";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Shoes />
       <Tokens />
       <Roadmap />
+      <Footer />
     </div>
   );
 }
