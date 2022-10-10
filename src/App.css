@@ -73,3 +73,9 @@
   color: #e2512b;
   background: white;
 }
+
+.in {
+  width: 100%;
+  height: 200px;
+  background-color: olive;
+}

@@ -63,7 +63,7 @@ export default function Header() {
         </ul>
       </div>
       <div className='navbar-end'>
-        <a className='btn-brand btn '>Get the App</a>
+        <a className='btn-brand btn mr-24'>Get the App</a>
       </div>
     </div>
   );

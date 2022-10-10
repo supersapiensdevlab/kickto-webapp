@@ -11,13 +11,23 @@ import {
   Html,
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import { useScroll } from "@react-three/drei";
 import PolygonToken from "../Assets/PolygonToken";
 export default function Model(props) {
   const { nodes, materials } = useGLTF("/shoes.gltf");
   const ref = useRef();
+  const scroll = useScroll();
+  const rsqw = (t, delta = 0.1, a = 1, f = 1 / (2 * Math.PI)) =>
+    (a / Math.atan(1 / delta)) *
+    Math.atan(Math.sin(2 * Math.PI * t * f) / delta);
 
   useFrame((state) => {
     const t = state.clock.getElapsedTime();
+    // const r1 = scroll.range(0 / 4, 1 / 4);
+    // const r2 = scroll.range(1 / 4, 1 / 4);
+    // const r3 = scroll.visible(4 / 5, 1 / 5);
+    // ref.current.rotation.x = Math.PI - (Math.PI / 2) * rsqw(r1) + r2 * 0.33;
+    // ref.current.rotation.x = Math.PI - (Math.PI / 2) * rsqw(r1) - r2 * 0.39;
     ref.current.rotation.x = -Math.PI / 1.75 + Math.cos(t / 4) / 8;
     ref.current.rotation.y = Math.sin(t / 4) / 8;
     ref.current.rotation.z = (1 + Math.sin(t / 1.5)) / 20;
@@ -25,7 +35,7 @@ export default function Model(props) {
   });
   return (
     <group {...props} ref={ref} {...props} dispose={null}>
-      <group rotation={[2, -0.85, -0.1]}>
+      <group>
         <group scale={1}>
           <mesh
             geometry={nodes.rtfkt_aj1_blinn4SG.geometry}

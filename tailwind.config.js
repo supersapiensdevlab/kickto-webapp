@@ -14,10 +14,12 @@ module.exports = {
         "shard-back": "url('/src/Assets/background/shard_bg.svg')",
         "shard-back2": "url('/src/Assets/background/bg_shard.svg')",
         "abstract-back": "url('/src/Assets/background/abstract_pattern.svg')",
+        "blur-bg": "url('/src/Assets/background/blur-bg.svg')",
       },
       dropShadow: {
         blue: " 0  14px 14px rgba(70, 202, 238, 0.6)",
         orange: " 0  14px 14px #E2512B",
+        orangelight: " 0  7px 7px #E2512B",
       },
       keyframes: {
         wiggle: {
