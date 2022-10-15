@@ -13,7 +13,7 @@ import {
   Text,
   Html,
 } from "@react-three/drei";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef,useCallback } from "react";
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 import Tokens from "../Tokens/Tokens";
@@ -22,12 +22,28 @@ import Roadmap from "../Roadmap/Roadmap";
 import Footer from "../Footer/Footer";
 import Features from "../Features/Features";
 import Model from "../Model";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 
 function CanvasBoard() {
   const [rs1, setR1] = useState();
   const [rs2, setR2] = useState();
 
   const [rs3, setR3] = useState();
+ 
+    const particlesInit = useCallback(async (engine) => {
+      console.log(engine);
+      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+      // starting from v2 you can add only the features you need reducing the bundle size
+      await loadFull(engine);
+    }, []);
+  
+    const particlesLoaded = useCallback(async (container) => {
+      await console.log(container);
+    }, []);
+  
+      
 
   function Model(props) {
     const { nodes, materials } = useGLTF("/shoes.gltf");
@@ -126,7 +142,7 @@ function CanvasBoard() {
       <ScrollControls
         pages={5} // Each page takes 100% of the height of the canvas
         distance={1} // A factor that increases scroll bar travel (default: 1)
-        damping={1} // Friction, higher is faster (default: 4)
+        damping={6} // Friction, higher is faster (default: 4)
         horizontal={false} // Can also scroll horizontally (default: false)
         infinite={false} // Can also scroll infinitely (default: false)
       >
@@ -149,6 +165,132 @@ function CanvasBoard() {
         <Scroll html>
           <Header />
           <Hero />
+          {/* <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} /> */}
+          <Particles
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        background: {
+          color: {
+            value: "transparent",
+          },
+        },
+        fpsLimit: 120,
+        interactivity: {
+          events: {
+             
+            resize: true,
+          },
+           
+        },
+        particles: {
+          color: {
+            value: "#ffffff",
+          },
+          links: {
+            color: "#ffffff",
+            distance: 150,
+            enable: false,
+            opacity: 0.5,
+            width: 1,
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            directions: "bottom",
+            enable: true,
+            outModes: {
+              default: "out",
+            },
+            random: true,
+            speed: 1,
+            straight: true,
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 800,
+            },
+            value: 80,
+          },
+          opacity: {
+            value: 0.5,
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            value: { min: 0.1, max: 2 },
+          },
+        },
+        detectRetina: true,
+      }}
+    />
+    <Particles
+      id="tsparticles2"
+      className=""
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        background: {
+          color: {
+            value: "transparent",
+          },
+        },
+        fpsLimit: 120,
+        interactivity: {
+          events: {
+             
+            resize: true,
+          },
+           
+        },
+        particles: {
+          color: {
+            value: "#f00",
+          },
+          links: {
+            color: "#ffffff",
+            distance: 150,
+            enable: false,
+            opacity: 0.5,
+            width: 1,
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            directions: "bottom",
+            enable: true,
+            outModes: {
+              default: "out",
+            },
+            random: true,
+            speed: 1,
+            straight: true,
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 800,
+            },
+            value: 80,
+          },
+          opacity: {
+            value: 0.5,
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            value: { min: 0.1, max: 2 },
+          },
+        },
+        detectRetina: true,
+      }}
+    />
           <div
             id='shoeWrapper'
             className=' min-h-screen flex flex-col   w-screen  bg-no-repeat bg-center object-cover     py-24  h-screen'>
@@ -163,7 +305,7 @@ function CanvasBoard() {
             </div>
           </div>
 
-          <div className='   bg-transparent backdrop-blur   z-10  relative'>
+          <div className='   bg-transparent    z-10  relative'>
             <img
               src={cloud2}
               className='w-max h-96 ml-auto     absolute -mb-48 z-40 bottom-0  left-1/4'
