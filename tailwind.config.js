@@ -10,7 +10,7 @@ module.exports = {
         "kickto-secondary": "#FA803C",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/Assets/hero.JPG')",
+        "hero-pattern": "url('/src/Assets/kickto-video.jpg')",
         "shard-back": "url('/src/Assets/background/shard_bg.svg')",
         "shard-back2": "url('/src/Assets/background/bg_shard.svg')",
         "abstract-back": "url('/src/Assets/background/abstract_pattern.svg')",
